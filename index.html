@@ -1,0 +1,319 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Tailwind Portfolio</title>
+</head>
+
+<body class="font-nunito">
+  <nav class="dark:bg-gray-900 w-full z-20 left-0 dark:border-gray-600 px-3 sm:px-16 absolute">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4">
+      <a href="https://flowbite.com/" class="flex items-center font-bold text-white dark:text-white">
+        PortfoSal
+      </a>
+      <div class="flex md:order-1">
+        <button id="toggle-button" data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-2" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 font-medium md:flex-row md:space-x-8 md:mt-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 bg-white md:bg-transparent items-center text-slate-800 md:text-white">
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:bg-transparent md:p-0 md:dark:text-blue-500 dark:text-white"
+              aria-current="page">Accueil</a>
+          </li> 
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-800 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Formation</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-800 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-800 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+          </li>
+          <li class="py-2 pl-3 pr-4 inline-flex text-white">
+            <img id="moon" src="./img/moon.png" class="w-5 cursor-pointer" alt="" />
+            <div id="hamburger" class="space-y-1 hidden z-20">
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="hero md:h-screen h-full bg-cover relative px-4 sm:px-16" style="background-image: url('./img/bg.jpg');">
+    <!-- <div class="h-screen absolute inset-0 bg-gradient-to-t from-slate-900 opacity-80">
+    </div> -->
+    <!-- <div class="left px-2 sm:px-12">
+      <div
+        class="flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit md:w-1/2">
+        <h1 class="text-4xl font-bold text-blue-900"><span class="text-base">Salut</span> <br> je suis Salem NKWEY</h1>
+        <p class="text-gray-400">
+          Je suis un développeur web junior mais avec une passion qui surpasse les années d'apprentissage, si vous
+          voulez
+          en savoir plus sur moi scrollez la page ou cliquez juste ici 👇🏽
+        </p>
+        <a class="bg-blue-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit" href="#contact">Contactez
+          moi</a>
+      </div>
+    </div> -->
+    
+    <div class="left2 relative top-32 md:top-42 w-full sm:w-2/3 md:w-1/2 text-white">
+      <div class="texts">
+        <p>Salut !</p>
+      <h1 class="text-4xl font-bold">Je suis Salem NKWEY</h1>
+      <p class="text-slate-200 uppercase">Développeur Web</p>
+      <p class="py-4">
+        Je suis un développeur web junior mais avec une passion qui surpasse les années d'apprentissage, si vous
+        voulez
+        en savoir plus sur moi scrollez la page ou cliquez juste ici 👇🏽
+      </p>
+      </div>
+      <div class="buttons">
+        <a class="bg-blue-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit" href="#contact">Contactez
+          moi</a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- about -->
+  <div id="about" class="px-4 sm:px-10 dark:bg-slate-900">
+    <div class="container mx-auto py-8 sm:py-24 flex flex-col-reverse lg:flex-row items-center gap-20">
+      <!-- left -->
+      <div class="relative">
+        <img class="absolute top-0 left-0 -z-10" src="./img/dots.png" alt="" />
+        <div class="rounded-full overflow-hidden">
+          <img src="./img/portrait1.jpg" alt="" />
+        </div>
+      </div>
+      <!-- right -->
+      <div class="my-auto flex flex-col gap-3">
+        <h1 class="text-blue-600 font-bold">A PROPOS DE MOI</h1>
+        <p class="text-gray-400">
+          Je suis un développeur junior passionné avec une capacité d'adaptation rapide. <br class="hidden md:flex">
+          J'apprends vite et je peux travailler
+          sous stress, que ce soit seul ou en équipe. </br class="hidden md:flex"> J'utilise des technologies modernes
+          comme Canva, Adobe XD, Figma, <br class="hidden md:flex"> ainsi que
+          des frameworks populaires comme Laravel et Tailwind CSS pour créer des sites web exceptionnels selon vos
+          rêves.
+        </p>
+        <h2 class="text-gray-400 font-medium">HTML</h2>
+        <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-full bg-blue-600 h-1.5 rounded-md"></div>
+        </div>
+        <h2 class="text-gray-400 font-medium">TAILWIND</h2>
+        <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-5/6 bg-blue-600 h-1.5 rounded-md"></div>
+        </div>
+        <h2 class="text-gray-400 font-medium">JAVASCIPT</h2>
+        <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-2/6 bg-blue-600 h-1.5 rounded-md"></div>
+        </div>
+        <h2 class="text-gray-400 font-medium">LARAVEL</h2>
+        <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-4/6 bg-blue-600 h-1.5 rounded-md"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- services -->
+  <div id="services" class="dark:bg-slate-800 bg-gray-100 pt-4 sm:pt-16 relative">
+    <img alt="Salem" src="./img/blur-cyan.png" width="530" height="530" decoding="async" data-nimg="1"
+      class="absolute bottom-full right-full  opacity-50" style="color: transparent;">
+    <div class="container mx-auto">
+      <!-- top -->
+      <div class="flex flex-col gap-3 items-center">
+        <h1 class="text-blue-600 font-bold">SERVICES</h1>
+        <p class="text-center text-gray-400 px-10 md:w-1/2">
+          Mon approche de la conception est dans la réalisation de vos rêves, rêvez le et je le réalise.
+        </p>
+      </div>
+      <!-- bottom -->
+      <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+        <!-- card -->
+        <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+          <img class="w-10" src="./img/app-development.png" alt="" />
+          <h1 class="font-medium text-lg dark:text-white">Développement Web</h1>
+          <p class="text-gray-400">
+            Transformez vos idées en réalité numérique avec notre expertise en développement web.
+          </p>
+          <a class="text-blue-600 font-semibold text-sm" href="">Lire plus</a>
+        </div>
+        <!-- card -->
+        <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+          <img class="w-10" src="./img/programming.png" alt="" />
+          <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+          <p class="text-gray-400">
+            Des designs captivants et intuitifs pour une expérience utilisateur inoubliable.
+          </p>
+          <a class="text-blue-600 font-semibold text-sm" href="">Lire plus</a>
+        </div>
+        <!-- card -->
+        <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+          <img class="w-10" src="./img/designer.png" alt="" />
+          <h1 class="font-medium text-lg dark:text-white">Graphiste</h1>
+          <p class="text-gray-400">
+            Donnez vie à votre marque grâce à des créations graphiques percutantes et uniques
+          </p>
+          <a class="text-blue-600 font-semibold text-sm" href="">Lire plus</a>
+        </div>
+        <!-- card -->
+        <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+          <img class="w-10" src="./img/social-media.png" alt="" />
+          <h1 class="font-medium text-lg dark:text-white">Marketing digital</h1>
+          <p class="text-gray-400">
+            Boostez votre présence en ligne avec des stratégies marketing numériques sur mesure.
+          </p>
+          <a class="text-blue-600 font-semibold text-sm" href="">Lire plus</a>
+        </div>
+        <!-- card -->
+        <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+          <img class="w-10" src="./img/photographer.png" alt="" />
+          <h1 class="font-medium text-lg dark:text-white">Photographe et Vidéaste</h1>
+          <p class="text-gray-400">
+            Capturez les moments précieux de la vie avec notre talent artistique en photographie et vidéographie.
+          </p>
+          <a class="text-blue-600 font-semibold text-sm" href="">Lire plus</a>
+        </div>
+        <!-- card -->
+        <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+          <img class="w-10" src="./img/mentor.png" alt="" />
+          <h1 class="font-medium text-lg dark:text-white">Enseignement</h1>
+          <p class="text-gray-400">
+            Maîtrisez le monde numérique à votre rythme avec nos cours d'informatique personnalisés.
+          </p>
+          <a class="text-blue-600 font-semibold text-sm" href="">Lire plus</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- works -->
+  <div id="works" class="dark:bg-slate-900 py-8 sm:py-20 relative">
+    <div class="container mx-auto">
+      <!-- <img class="absolute bottom-0 left-1/2 w-screen -translate-x-1/2 bg-cover -z-40"
+        src="https://tailwindui.com/img/component-images/grid-blur-purple-on-black.jpg" alt="Archi-Tech Academy"> -->
+      <!-- top -->
+      <div class="flex flex-col gap-3 items-center px-10">
+        <h1 class="text-blue-600 font-bold">PORTFOLIO</h1>
+        <h1 class="text-3xl dark:text-white">Travaux et Projets</h1>
+        <p class="md:w-1/2 text-center text-gray-400">
+          J'aide les designers, les petites agences, Start-up et les entreprises à donner vie à leurs idées. Propulsé
+          par Figma, VS Code et
+          café, je transforme vos exigences en sites Web bien conçus
+        </p>
+      </div>
+      <!-- bottom -->
+      <div class="p-5 sm:p-0 grid md:grid-cols-2 md:gap-x-3  lg:grid-cols-3 lg:gap-x-5">
+        <!-- card -->
+        <div class="w-full shadow-xl rounded-lg my-3 md:my-3 m-1 transition-all hover:scale-110">
+          <img src="./img/atgc.png" />
+        </div>
+        <!-- card -->
+        <div class="w-full shadow-xl rounded-lg my-3 md:my-3 m-1 transition-all hover:scale-110">
+          <img src="./img/xcode.png" />
+        </div>
+        <!-- card -->
+        <div class="w-full shadow-xl rounded-lg my-3 md:my-3 m-1 transition-all hover:scale-110">
+          <img src="./img/merdi.png" />
+        </div>
+        <!-- card -->
+        <div class="w-full shadow-xl rounded-lg my-3 md:my-3 m-1 transition-all hover:scale-110">
+          <img src="./img/paradiso.png" />
+        </div>
+        <!-- card -->
+        <div class="w-full shadow-xl rounded-lg my-3 md:my-3 m-1 transition-all hover:scale-110">
+          <img src="./img/x2.jpg" />
+        </div>
+        <!-- card -->
+        <div class="w-full shadow-xl rounded-lg my-3 md:my-3 m-1 transition-all hover:scale-110">
+          <img src="./img/baninga.png" />
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- contact -->
+  <div id="contact" class="bg-gray-100 dark:bg-slate-800 py-8 sm:py-16 relative">
+    <!-- <img class="absolute bottom-0 left-1/2 w-screen -translate-x-1/2 bg-cover"
+      src="https://tailwindui.com/img/component-images/grid-blur-purple-on-black.jpg" alt="Archi-Tech Academy"> -->
+    <div class="container mx-auto relative">
+      <!-- top -->
+      <div class="flex flex-col gap-3 items-center">
+        <h1 class="text-blue-600 font-bold">CONTACT</h1>
+        <h1 class="text-3xl dark:text-white">Vous avez une question?</h1>
+        <p class="md:w-1/2 text-center text-gray-400">
+          Vous avez une idée à concretiser? <br> Ecrivez moi pour en discuter.
+        </p>
+      </div>
+      <!-- bottom -->
+      <form class="mt-5 p-8 flex flex-col gap-5 items-center">
+        <input class="p-2 w-full md:w-1/2 ring-1 ring-blue-300 rounded-sm dark:bg-slate-900 dark:ring-0 dark:text-white"
+          type="text" placeholder="Votre nom" />
+        <input class="p-2 w-full md:w-1/2 ring-1 ring-blue-300 rounded-sm dark:bg-slate-900 dark:ring-0 dark:text-white"
+          type="email" placeholder="Votre mail" />
+        <textarea
+          class="p-2 w-full md:w-1/2 ring-1 ring-blue-300 rounded-sm dark:bg-slate-900 dark:ring-0 dark:text-white"
+          cols="30" rows="10" placeholder="Message..."></textarea>
+        <a href="mailto:salemnk02@gmail.com"
+          class="w-full md:w-1/2 bg-blue-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer">
+          Envoyer
+        </a>
+      </form>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="w-full bg-slate-900 p-6">
+    <div class="container mx-auto flex items-center justify-between">
+      <li class="py-2 pl-3 pr-4 inline-flex text-white">
+        <img id="moon" src="./img/moon.png" class="w-5 cursor-pointer" alt="" />
+        <div id="hamburger" class="space-y-1 hidden z-20">
+        </div>
+      </li>
+      <span class="hidden md:block font-medium text-white">© 2023 Design with ♥️ by Salem Nk.</span>
+      <div class="flex gap-2">
+        <a href="https://wa.me/message/VBROVNOQNWRCN1">
+          <img class="w-4 cursor-pointer" src="./img/whatsapp.png" alt="" />
+        </a>
+        <a href="https://www.facebook.com/salemnk02/">
+          <img class="w-4 cursor-pointer" src="./img/facebook.png" alt="" />
+        </a>
+        <a href="">
+          <img class="w-4 cursor-pointer" src="./img/instagram.png" alt="" />
+        </a>
+        <a href="">
+          <img class="w-4 cursor-pointer" src="./img/twitter.png" alt="" /></a>
+
+
+      </div>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+  <script src="./autotyping.js"></script>
+  <script src="./spaghetti.js"></script>
+</body>
+
+</html>
